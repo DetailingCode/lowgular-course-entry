@@ -1,5 +1,33 @@
 <h1>Employee list</h1>
 
+<style>
+
+  h1{
+    text-align: center;
+  }
+
+  body{
+    background: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  ul{
+    border: solid 3px black;
+    padding-right: 1.7rem;
+    line-height: 2rem;
+  }
+
+  li{
+    list-style-type: square;
+
+  }
+
+
+
+</style>
 
 
 <ul *ngIf="data$ | async as data; else empty">
