@@ -10,6 +10,8 @@ import { EmployeeModel } from '../../model/employee.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeListComponent {
+  title: string = `Sample text`;
+  // data$: Observable<Employee[] | null> = of (null);
   data$: Observable<EmployeeModel[] | null> = this._httpClient.get<EmployeeModel[]>('assets/data/employees.json');
 
   constructor(private _httpClient: HttpClient) {
