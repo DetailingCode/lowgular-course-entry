@@ -12,3 +12,4 @@ export class ProjectService {
     return this._httpClient.get<ProjectModel[]>('assets/data/projects.json')
   }
 }
+
